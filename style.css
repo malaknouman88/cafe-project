@@ -1,0 +1,235 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body {
+  background-color: #ffffff;
+  color: #333;
+}
+.feedback {
+  width: 100%;
+  padding: 60px 0 80px 0;
+}
+.header {
+  text-align: center;
+  margin-bottom: 70px;
+}
+.header h2 {
+  font-size: 2.2rem;
+  color: #2b2b2b;
+  margin-bottom: 12px;
+}
+.section-header p {
+  font-size: 1rem;
+  color: #777;
+}
+.feedback-grid {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.feedback-card-wrapper {
+  position: relative;
+  flex: 1;
+  min-width: 300px;
+  max-width: 540px;
+  border: 1.5px solid #a87d51;
+  border-radius: 12px;
+  padding: 24px;
+  margin-top: 40px;
+}
+.quote-mark {
+  position: absolute;
+  background-color: #ffffff;
+  color: #a87d51;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1;
+  padding: 0 10px;
+}
+.top-quote {
+  top: -14px;
+  left: 120px;
+}
+.bottom-quote {
+  bottom: -14px;
+  right: 120px;
+}
+.photo-box {
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 6px solid #ffffff;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  background-color: #e2e2e2;
+}
+.photo-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card-inner {
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  padding: 50px 30px 25px 30px;
+  text-align: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.review-text {
+  font-size: 0.88rem;
+  line-height: 1.6;
+  color: #666;
+  margin-bottom: 30px;
+}
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  text-align: left;
+}
+.user-info h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #2b2b2b;
+  margin-bottom: 2px;
+}
+.user-info span {
+  font-size: 0.82rem;
+  color: #888;
+}
+.star-rating {
+  display: flex;
+  gap: 3px;
+  font-size: 0.9rem;
+}
+.star-rating .fill {
+  color: #ff7a00;
+}
+.star-rating .empty {
+  color: #ddd;
+}
+.site-footer {
+  background-color: #1a1715;
+  color: #ffffff;
+  padding: 60px 0 30px 0;
+  width: 100%;
+}
+.footer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+.footer-col {
+  flex: 1;
+  min-width: 140px;
+}
+.brand-col {
+  flex: 2;
+  min-width: 240px;
+  padding-right: 20px;
+}
+.logo-text {
+  font-family: 'Georgia', serif;
+  font-size: 2rem;
+  color: #c89d66;
+  font-weight: normal;
+  line-height: 1;
+  margin-bottom: 15px;
+}
+.logo-text span {
+  display: block;
+  font-size: 0.75rem;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 1px;
+  color: #c89d66;
+  margin-top: 2px;
+}
+.brand-col p {
+  color: #cccccc;
+  font-size: 0.88rem;
+  line-height: 1.6;
+}
+.footer-col h3 {
+  font-size: 1.05rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+.footer-col ul {
+  list-style: none;
+}
+.footer-col ul li {
+  margin-bottom: 12px;
+}
+.footer-col ul li a {
+  color: #cccccc;
+  text-decoration: none;
+  font-size: 0.88rem;
+  transition: color 0.2s ease;
+}
+.footer-col ul li a:hover {
+  color: #ffffff;
+}
+.social-links {
+  display: flex;
+  gap: 10px;
+}
+.social-icon {
+  width: 36px;
+  height: 36px;
+  background-color: #ffffff;
+  color: #1a1715;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+.social-icon:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  padding-top: 25px;
+  text-align: center;
+}
+.footer-bottom p {
+  color: #cccccc;
+  font-size: 0.85rem;
+}
+@media (max-width: 768px) {
+  .feedback-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feedback-card-wrapper {
+    width: 100%;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
