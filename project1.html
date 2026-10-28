@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+.first-page-section {
+    background-color: rgb(255, 255, 255);
+    display: flex;             
+    justify-content: space-between; 
+    align-items: center;       
+    padding: 80px 60px;             
+}
+
+.image-side img {
+    width: 350px;              
+    height: auto;
+}
+    /* تنسيق الزر الافتراضي */
+button {
+    background-color: #8E5F42; /* لون الخلفية البني الدافئ */
+    color: white;              /* لون الكلمة من الداخل باللون الأبيض */
+    padding: 12px 24px;        /* مساحة داخلية تعطي الزر حجماً مريحاً */
+    border: none;              /* إزالة الحواف السوداء الافتراضية للزر */
+    border-radius: 25px;       /* جعل حواف الزر دائرية واحترافية */
+    font-size: 16px;           /* حجم الخط داخل الزر */
+    cursor: pointer;           /* تحويل شكل الماوس ليد عند الوقوف عليه */
+    transition: background-color 0.3s ease; /* تأثير ناعم عند مرور الماوس */
+}
+
+/* تأثير عند مرور الماوس فوق الزر (Hover) */
+button:hover {
+    background-color: #70472e; /* يصبح اللون بني داكن قليلاً عند الوقوف عليه */
+}
+
+.text-side pre {
+    font-family: 'Inter', sans-serif;
+}
+.text-side h2 {
+    font-family: 'Inter', sans-serif;
+}
+
+/* --- تعديل القسم الثاني ليصبح مثل الصورة تماماً --- */
+.second-page-section {
+    background-color: rgb(253, 250, 246);
+    padding: 60px 40px;
+    text-align: center; /* لجعـل العنوان الرئيسي في المنتصف */
+    font-family: 'Inter', sans-serif;
+}
+
+.section-title {
+    font-size: 32px;
+    margin-bottom: 50px;
+    color: #2b1f1f;
+}
+
+/* تقسيم الأقسام إلى 3 أعمدة */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr 1fr; /* عمود أيسر، عمود أوسط أعرض قليلاً للصورة، وعمود أيمن */
+    align-items: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto; /* لتوسيط التصميم بالكامل في الشاشة */
+}
+
+/* ترتيب العناصر داخل الأعمدة الجانبية */
+.left-column, .right-column {
+    display: flex;
+    flex-direction: column;
+    gap: 80px; /* مسافة عمودية بين العنصر العلوي والسفلي */
+}
+
+/* محاذاة النصوص */
+.left-column {
+    text-align: right; /* لجعل النص محاذي لليمين جهة الصورة */
+}
+
+.right-column {
+    text-align: left; /* لجعل النص محاذي لليسار جهة الصورة */
+}
+
+/* تنسيق الفيتشرز (الأيقونة والكلام) */
+.feature-box img {
+    width: 50px; /* حجم الأيقونات الصغيرة */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.feature-box h3 {
+    margin: 5px 0;
+    font-size: 18px;
+    color: #2b1f1f;
+}
+
+.feature-box p {
+    font-size: 14px;
+    color: #6e6464;
+    line-height: 1.6;
+}
+
+/* تنسيق الصورة الكبيرة في المنتصف */
+.center-image img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+}
+</style>
+
+<body> 
+
+<section class="first-page-section">
+
+    <pre>
+
+
+
+
+    </pre>
+
+    <div class="text-side">
+
+        <h2>Discover the best coffee</h2>
+<pre>Bean Scene is a coffee shop that provides you with quality coffee that helps 
+boost your productivity and <strong>helps build your mood.</strong> Having a cup of coffee 
+is good, but having a cup of real coffee is greater. There is no doubt that 
+you will enjoy this coffee more than others you have ever tasted.
+
+Bean Scene is a <strong>coffee shop that provides</strong> you with quality coffee that
+helps boost your productivity and helps build your mood.</pre> 
+  
+       
+        <br>
+            <a href="اللينك"> <button>Learn more</button> </a>
+        </p>
+    </div>
+
+
+    <div class="image-side">
+        <img src="c:\Users\AB\OneDrive - EL-Minia University - Students\Pictures\Screenshots\Screenshot 2026-10-27 183621.png" alt="coffee Cups">
+
+
+
+    </div>
+
+
+
+</section>
+
+
+<!-- --- القسم الثاني المعدل بالكامل --- -->
+<section class="second-page-section">
+    
+    <h2 class="section-title">Coffee made easy</h2>
+
+    <div class="grid-container">
+        
+        <!--العمود الأيسر -->
+
+        <div class="left-column">
+            <div class="feature-box">
+                <img src="c:\Users\AB\OneDrive - EL-Minia University - Students\Pictures\Screenshots\Screenshot 2026-10-27 232036.png" alt="icon">
+                <h3>Convenient</h3>
+                <p>Coffee seeds are generally planted in large beds in shaded nurseries.</p>
+            </div>
+            <div class="feature-box">
+                <img src="c:\Users\AB\OneDrive - EL-Minia University - Students\Pictures\Screenshots\Screenshot 2026-10-27 232546.png" alt="icon">
+                <h3>Compostable</h3>
+                <p>Coffee seeds are generally planted in large beds in shaded nurseries.</p>
+            </div>
+        </div>
+
+       
+        <div class="center-image">
+            <img src="c:\Users\AB\OneDrive - EL-Minia University - Students\Pictures\Screenshots\Screenshot 2026-10-27 215310.png" alt="Main Coffee Cup">
+        </div>
+
+        <!-- العمود الأيمن  -->
+
+        <div class="right-column">
+            <div class="feature-box">
+                <img src="c:\Users\AB\OneDrive - EL-Minia University - Students\Pictures\Screenshots\Screenshot 2026-10-27 232701.png" alt="icon">
+                <h3>Convenient</h3>
+                <p>Coffee seeds are generally planted in large beds in shaded nurseries.</p>
+            </div>
+            <div class="feature-box">
+                <img src="c:\Users\AB\OneDrive - EL-Minia University - Students\Pictures\Screenshots\Screenshot 2026-10-27 233038.png" alt="icon">
+                <h3>Compostable</h3>
+                <p>Coffee seeds are generally planted in large beds in shaded nurseries.</p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+</body>
+</html>
